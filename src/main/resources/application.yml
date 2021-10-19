@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: presideatech
+    password: presideatech 
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 506012490016-3jb4t9o3pk3seug5dcegbsj3ff1vj8a9.apps.googleusercontent.com
+            client-secret: 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
+  sql:
+    init:
+      platform: POSTGRESQL
+      mode: always
+upload:
+  path: /opt/ecommerce/uploads/
+  hostname: http://localhost:8080/
